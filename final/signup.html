@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIGN UP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <form action="" method="post" id="formName" name="formName">
+       <h2>SIGN UP</h2>
+       <label>Enter Name</label>
+       <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br>
+
+       <label>Enter UserName</label>
+       <input type="text" name="uname" id="uname" placeholder="Enter your User Name" required><br>
+
+       <label>Password</label>
+       <input type="password" name="password" id="passwd" placeholder="Password" required><br>
+
+       <label>Confirm Password</label>
+       <input type="password" name="re_password" id="rpasswd" placeholder="Confirm Password" required><br>
+
+       <a href="index.html" class="ca">Already have an account?</a>
+       <button type="submit">Sign Up</button>
+   </form>
+  <script>
+    function isUser(user, passwd) {
+        fetch('https://script.google.com/macros/s/AKfycbxjNigeSb3Oa__RDU0H9Z4RwXvBHbvsVFyg-3om6floEwql6C8Almh0GLaYBP9Llgsdkw/exec')
+        .then(res => res.json())
+        .then(data => {
+            let content = data['content'];
+            for(let i=1; i<content.length; i++) {
+                if(content[i][1]==user && content[i][2]==passwd) return true;
+            }
+            return false;
+        });
+        }
+       if(document.getElementById("passwd").innerText==document.getElementById("rpasswd").innerText) {
+
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbxjNigeSb3Oa__RDU0H9Z4RwXvBHbvsVFyg-3om6floEwql6C8Almh0GLaYBP9Llgsdkw/exec';
+              const form = document.forms['formName'];
+              
+              form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  if(!isUser(document.getElementById("uname"), document.getElementById("passwd"))) {
+
+                      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                      .then(response => alert("Thank you! Your Account Has been created!" ))
+                      .then(() => {  window.location.reload(); })
+                      .catch(error => console.error('Error!', error.message))
+                    }
+                  else {
+                    alert("User Already Exist");
+                  }
+                  window.location.replace("../index.html");
+              })
+          }
+          else {
+                alert("Password Not Match");
+            }
+  </script>
+</body>
+</html>

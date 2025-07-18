@@ -1,0 +1,568 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: #4caf50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 00px 00px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 00px;
+        }
+
+        .results-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Endocrinologist Specialists</title>
+</head>
+<body>
+    <header>
+        <h1>Endocrinologist Specialists</h1>
+    </header>
+
+    <nav>
+        <a href="#doctors">Doctors</a>
+    </nav>
+
+    <main>
+        <section id="doctors" class="results-container">
+            <h2 class="text-center mb-4">Best Endocrinologist</h2>
+            <div class="row">
+                <div>
+                    <ul id="doctors-list"></ul>
+                </div>
+                
+                <div>
+     <a href="./appoint.html"><img src="./ajmani.jpeg" height="100" width="100"><br>Dr. Ajay Kumar Ajmani</a>
+                <p>
+                    MBBS, MD - General Medicine, DM - Endocrinology <br>
+                    Endocrinologist, <br>
+                    Diabetologist <br>
+                    39 Years Experience Overall  (30 years as specialist)
+                    
+                    </p>
+                <br>
+                <br>
+                
+                <a href="./appoint.html"><img src="./anshul.jpeg" height="100" width="100"><br>Dr. Anshul Kumar</a>
+                <p> 
+                    
+                    MBBS, MD - General Medicine, DM - Endocrinology <br>
+                    Endocrinologist, <br>
+                    Diabetologist <br>
+                    12 Years Experience Overall  (3 years as specialist)   
+                   
+                    </p>
+                <br>
+                <br>
+                <a href="./appoint.html"><img src="./varunn.jpg" height="100" width="100"><br>Dr. Vineet Kumar Surana</a>
+                <p>
+                    
+                    MBBS, DM - Endocrinology, MD - Pediatrics <br>
+                    Endocrinologist, <br>
+                    Diabetologist <br>
+                    13 Years Experience Overall  (8 years as specialist)
+                    </p>
+                <br>
+                <br>
+                
+                <a href="./appoint.html"><img src="./danendra.jpeg" height="100" width="100"><br>Dr. Danendra Sahu</a>
+                <p> 
+                    MBBS, MD - General Medicine, DM - Endocrinology <br>
+                    Endocrinologist, <br>
+                    Diabetologist <br>
+                    14 Years Experience Overall  (4 years as specialist)
+                    </p>
+                <br>
+                <br>
+                <a href="./appoint.html"><img src="./cm.jpeg" height="100" width="100"><br>Dr. C M Batra</a>
+                
+                <p> 
+                    
+                    MBBS, MD - General Medicine, <br> 
+                    DNB - Endocrinology, Diabetes, Metabolism, <br> 
+                    Diploma in Child Health (DCH) <br>
+                    Endocrinologist <br>
+                    43 Years Experience Overall  (35 years as specialist
+                    </p>
+            
+                <br>
+                <br>
+
+            </div>
+        
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p class="text-center">&copy; 2024 Endocrinologist Specialists</p>
+    </footer>
+    <p>
+        
+ 
+
+
+    </p>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --dark-text: #2c3e50;
+            --light-text: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1a252f);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .page-title {
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-subtitle {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .navbar-custom {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0.5rem 0;
+        }
+
+        .navbar-custom a {
+            color: white;
+            font-weight: 500;
+            padding: 0.8rem 1.5rem;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar-custom a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .doctor-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: none;
+            height: 100%;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .doctor-img-container {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .doctor-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .doctor-card:hover .doctor-img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 1.8rem;
+        }
+
+        .doctor-name {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .doctor-qualification {
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+
+        .doctor-specialty {
+            background-color: #eaf2f8;
+            color: var(--secondary-color);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.3rem 0.3rem 0.3rem 0;
+        }
+
+        .doctor-experience {
+            font-size: 0.95rem;
+            margin: 1.2rem 0;
+            color: #7f8c8d;
+        }
+
+        .btn-appointment {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-appointment:hover {
+            background-color: #2980b9;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 3rem;
+            position: relative;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2.5rem 0;
+            margin-top: 4rem;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 12px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .doctor-card {
+                margin-bottom: 20px;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .navbar-custom a {
+                padding: 0.6rem 1rem;
+            }
+        }
+    </style>
+    <title>Endocrinology Specialists | Top Hormone & Diabetes Doctors</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-title">Endocrinology Specialists</h1>
+            <p class="page-subtitle">Expert care in hormone disorders and diabetes management</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#doctors"><i class="fas fa-user-md mr-2"></i>Our Endocrinologists</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="doctors">
+            <h2 class="section-title">Our Endocrinology Specialists</h2>
+            <div class="row">
+                <!-- Doctor 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./ajmani.jpeg" alt="Dr. Ajay Kumar Ajmani" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Ajay Kumar Ajmani</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, MD - General Medicine, DM - Endocrinology
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Endocrinologist</span>
+                                <span class="doctor-specialty">Diabetologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>39 Years Experience (30 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./anshul.jpeg" alt="Dr. Anshul Kumar" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Anshul Kumar</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, MD - General Medicine, DM - Endocrinology
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Endocrinologist</span>
+                                <span class="doctor-specialty">Diabetologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>12 Years Experience (3 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./varunn.jpg" alt="Dr. Vineet Kumar Surana" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Vineet Kumar Surana</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, DM - Endocrinology, MD - Pediatrics
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Endocrinologist</span>
+                                <span class="doctor-specialty">Diabetologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>13 Years Experience (8 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./danendra.jpeg" alt="Dr. Danendra Sahu" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Danendra Sahu</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, MD - General Medicine, DM - Endocrinology
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Endocrinologist</span>
+                                <span class="doctor-specialty">Diabetologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>14 Years Experience (4 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./cm.jpeg" alt="Dr. C M Batra" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. C M Batra</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, MD - General Medicine, DNB - Endocrinology, Diabetes, Metabolism, Diploma in Child Health (DCH)
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Endocrinologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>43 Years Experience (35 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 Endocrinology Specialists. All rights reserved.</p>
+            <p class="mb-0">Committed to excellence in hormone and metabolic care</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

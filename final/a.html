@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isUser(user, passwd) {
+
+            fetch('https://script.google.com/macros/s/AKfycbxjNigeSb3Oa__RDU0H9Z4RwXvBHbvsVFyg-3om6floEwql6C8Almh0GLaYBP9Llgsdkw/exec')
+            .then(res => res.json())
+            .then(data => {
+                let content = data['content'];
+                for(let i=1; i<content.length; i++) {
+                    if(content[i][1]==user && content[i][2]==passwd) return true;
+                    return false;
+                }
+            });
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0px;
+        }
+
+        nav {
+            background-color: #4caf50;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 00px 00px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 00px;
+        }
+
+        .results-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Hematologist Specialists</title>
+</head>
+<body>
+    <header>
+        <h1>Hematologist Specialists</h1>
+    </header>
+
+    <nav>
+        <a href="#doctors">Doctors</a>
+    </nav>
+
+    <main>
+        <section id="doctors" class="results-container">
+            <h2 class="text-center mb-4">Best Hematologist</h2>
+            <div class="row">
+                <div>
+                    <ul id="doctors-list"></ul>
+                </div>
+                
+                <div>
+     <a href="./appoint.html"><img src="./rayaz.jpeg" height="100" width="100"><br>Dr. Rayaz Ahmed</a>
+                <p> 
+                    
+                    MBBS, MD - Pathology, DM - Clinical Haematology <br>
+                    Hematologic Oncologist, <br>
+                    Hematologist <br>
+                    18 Years Experience Overall  (13 years as specialist)
+                    </p>
+                <br>
+                <br>
+
+                <a href="./appoint.html"><img src="./harit.jpeg" height="100" width="100"><br>Dr. Harit Chaturvedi</a>
+                <p> 
+                    
+                    MBBS, MS - General Surgery, <br>
+                     MCh - Surgical Oncology <br>
+                    Surgical Oncologist <br>
+                    37 Years Experience Overall  (30 years as specialist)
+                    </p>
+                <br>
+                <br>
+                <a href="./appoint.html"><img src="./shefali.webp" height="100" width="100"><br>Dr. Shefali Sardana</a>
+                <p> 
+                    
+                    DNB - Medical Oncology, <br> 
+                    DNB - General Medicine, MBBS <br>
+                    Medical Oncologist <br>
+                    11 Years Experience Overall  (9 years as specialist)
+                    </p>
+                <br>
+                <br>
+                
+                <a href="./appoint.html"><img src="./dinesh.jpg" height="100" width="100"><br>Dr. Dinesh Bhurani</a>
+                <p> 
+                    
+                    DM - Clinical Haematology, MBBS,  <br>
+                    Fellow of the Royal College of Pathologists of Australasia (FRCPA), <br>
+                    MD - Pediatrics <br>
+                    Hematologist, <br>
+                    Hematologic Oncologist, <br>
+                    Pediatrician <br>
+                    30 Years Experience Overall  (25 years as specialist)
+                    </p>
+                <br>
+                <br>
+                <a href="./appoint.html"><img src="./divya.png" height="100" width="100"><br>Dr. Divya Bansal</a>
+                
+                <p> 
+                    
+                    MBBS, DNB - Pediatrics, DM - Clinical Haematology <br>
+                    Clinical Hematologist <br>
+                    20 Years Experience Overall  (6 years as specialist)
+                    </p>
+            
+                <br>
+                <br>
+
+            </div>
+        
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p class="text-center">&copy; 2024 Hematologist Specialists</p>
+    </footer>
+    <p>
+        
+ 
+
+
+    </p>
+
+</body>
+</huro -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --dark-text: #2c3e50;
+            --light-text: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1a252f);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .page-title {
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-subtitle {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .navbar-custom {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0.5rem 0;
+        }
+
+        .navbar-custom a {
+            color: white;
+            font-weight: 500;
+            padding: 0.8rem 1.5rem;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .navbar-custom a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .doctor-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: none;
+            height: 100%;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .doctor-img-container {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .doctor-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .doctor-card:hover .doctor-img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 1.8rem;
+        }
+
+        .doctor-name {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .doctor-qualification {
+            color: var(--secondary-color);
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+
+        .doctor-specialty {
+            background-color: #eaf2f8;
+            color: var(--secondary-color);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.3rem 0.3rem 0.3rem 0;
+        }
+
+        .doctor-experience {
+            font-size: 0.95rem;
+            margin: 1.2rem 0;
+            color: #7f8c8d;
+        }
+
+        .btn-appointment {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-appointment:hover {
+            background-color: #2980b9;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(41, 128, 185, 0.3);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 3rem;
+            position: relative;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2.5rem 0;
+            margin-top: 4rem;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 12px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .social-icons a:hover {
+            color: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .doctor-card {
+                margin-bottom: 20px;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .navbar-custom a {
+                padding: 0.6rem 1rem;
+            }
+        }
+    </style>
+    <title>Hematology Specialists | Top Blood Disorder Doctors</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-title">Hematology Specialists</h1>
+            <p class="page-subtitle">Expert care in blood disorders and hematologic conditions</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#doctors"><i class="fas fa-user-md mr-2"></i>Our Hematologists</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section id="doctors">
+            <h2 class="section-title">Our Hematology Specialists</h2>
+            <div class="row">
+                <!-- Doctor 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./rayaz.jpeg" alt="Dr. Rayaz Ahmed" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Rayaz Ahmed</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, MD - Pathology, DM - Clinical Haematology
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Hematologic Oncologist</span>
+                                <span class="doctor-specialty">Hematologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>18 Years Experience (13 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./harit.jpeg" alt="Dr. Harit Chaturvedi" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Harit Chaturvedi</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, MS - General Surgery, MCh - Surgical Oncology
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Surgical Oncologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>37 Years Experience (30 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./shefali.webp" alt="Dr. Shefali Sardana" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Shefali Sardana</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>DNB - Medical Oncology, DNB - General Medicine, MBBS
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Medical Oncologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>11 Years Experience (9 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./dinesh.jpg" alt="Dr. Dinesh Bhurani" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Dinesh Bhurani</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>DM - Clinical Haematology, MBBS, FRCPA, MD - Pediatrics
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Hematologist</span>
+                                <span class="doctor-specialty">Hematologic Oncologist</span>
+                                <span class="doctor-specialty">Pediatrician</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>30 Years Experience (25 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="doctor-card">
+                        <div class="doctor-img-container">
+                            <img src="./divya.png" alt="Dr. Divya Bansal" class="doctor-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="doctor-name">Dr. Divya Bansal</h3>
+                            <div class="doctor-qualification">
+                                <i class="fas fa-graduation-cap mr-2"></i>MBBS, DNB - Pediatrics, DM - Clinical Haematology
+                            </div>
+                            <div>
+                                <span class="doctor-specialty">Clinical Hematologist</span>
+                            </div>
+                            <p class="doctor-experience">
+                                <i class="fas fa-briefcase mr-2"></i>20 Years Experience (6 as specialist)
+                            </p>
+                            <a href="./appoint.html" class="btn btn-appointment">
+                                <i class="fas fa-calendar-check mr-2"></i>Book Appointment
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p>&copy; 2024 Hematology Specialists. All rights reserved.</p>
+            <p class="mb-0">Committed to excellence in blood disorder treatment</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

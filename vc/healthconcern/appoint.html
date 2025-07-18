@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthConnect Appointment Scheduling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px #000000;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HealthConnect Appointment Scheduling</h1>
+  </header>
+
+  <div class="container">
+    <form id="appointmentForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+      <button type="submit">Submit Appointment</button>
+    </form>
+  </div>
+
+  <script>
+    function isappoint(name, email, phone, date, time) {
+        fetch('https://script.google.com/macros/s/AKfycbziuZbIt4Vc9UIRKewLd0GlWkrJYN_JVmkra8krBOUOR9RcDGPz3mmF7KqlGkOQNrT_0Q/exec')
+        .then(res => res.json())
+        .then(data => {
+            let content = data['content'];
+            for(let i=1; i<content.length; i++) {
+                if(content[i][0]==name && content[i][1]==email && content[i][2]==phone && content[i][3]==date && content[i][4] == time) return true;
+            }
+            return false;
+        });
+        }
+
+    const scriptURL = "https://script.google.com/macros/s/AKfycbziuZbIt4Vc9UIRKewLd0GlWkrJYN_JVmkra8krBOUOR9RcDGPz3mmF7KqlGkOQNrT_0Q/exec";
+    const form = document.forms['appointmentForm'];
+              
+    form.addEventListener('submit', e => {
+        if(!isappoint(
+          document.getElementById("fullName"),
+          document.getElementById("email"),
+          document.getElementById("phone"),
+          document.getElementById("date"),
+          document.getElementById("time")
+        )) {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thank you! Your Appointment Has been made!" ))
+          .then(() => {  window.location.reload(); })
+          .catch(error => console.error('Error!', error.message))
+        }
+        else {
+          alert("Appointment Already Made");
+        }
+        window.location.replace("../index.html");
+    })
+  </script>
+
+</body>
+</html>
