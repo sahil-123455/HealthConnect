@@ -1,9 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>HealthConnect</title>
+    <meta charset="UTF-8">
+    <title>HealthConnect</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            height: 11vh;
+            width: 100%;
+            border: none;
+        }
+        .content {
+            height: 89vh;
+            width: 100%;
+            border: none;
+        }
+    </style>
 </head>
-<frameset rows='11%, *' border='0'>
-<frame src='navbar.html' name='nav'>
-<frame src='./home/home.html' name='content'>
-</frameset>
+<body>
+    <!-- Navbar Section -->
+    <iframe class="navbar" src="navbar.html" name="nav"></iframe>
+
+    <!-- Content Section -->
+    <iframe class="content" src="home/home.html" name="content"></iframe>
+</body>
 </html>
